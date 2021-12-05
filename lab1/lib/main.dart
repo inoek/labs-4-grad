@@ -116,6 +116,14 @@ class Student extends Person {
 }
 
 class Teachers extends Person {
+  Teachers({
+    this.subject,
+    this.age,
+  });
+
+  final String? subject;
+  final String? age;
+
   @override
   void getName() {
     // TODO: implement getName
