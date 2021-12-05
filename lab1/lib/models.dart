@@ -1,18 +1,28 @@
 import 'package:flutter/cupertino.dart';
 
 abstract class Person {
-  String? firstName;
-  String? secondName;
+  const Person({
+    this.firstName,
+    this.secondName,
+  });
+
+  final String? firstName;
+  final String? secondName;
 }
 
 class Student extends Person with ChangeNotifier {
   Student({
     this.direction,
     this.year,
+    this.firstName,
+    this.secondName,
   });
 
+  @override
+  final String? firstName;
+  @override
+  final String? secondName;
   final String? direction;
-
   final String? year;
 
   String? _inputFirstName;
@@ -50,13 +60,33 @@ class Student extends Person with ChangeNotifier {
     _inputYear = value;
     notifyListeners();
   }
+
+  List<Student> _students = [];
+
+  List<Student> get students => _students;
+
+  set students(List<Student> value) {
+    _students = value;
+    notifyListeners();
+  }
+
+  void addStudent(Student student) {
+    students.add(student);
+  }
 }
 
 class Teacher extends Person with ChangeNotifier {
   Teacher({
     this.subject,
     this.age,
+    this.firstName,
+    this.secondName,
   });
+
+  @override
+  final String? firstName;
+  @override
+  final String? secondName;
 
   final String? subject;
   final String? age;
@@ -95,5 +125,18 @@ class Teacher extends Person with ChangeNotifier {
   set inputAge(String? value) {
     _inputAge = value;
     notifyListeners();
+  }
+
+  List<Teacher> _teachers = [];
+
+  List<Teacher> get teachers => _teachers;
+
+  set teachers(List<Teacher> value) {
+    _teachers = value;
+    notifyListeners();
+  }
+
+  void addTeacher(Teacher teacher) {
+    teachers.add(teacher);
   }
 }
