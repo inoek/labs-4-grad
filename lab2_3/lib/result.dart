@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Result extends StatelessWidget {
   const Result(this.result, {Key? key}) : super(key: key);
-  final String? result;
+  final num result;
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class Result extends StatelessWidget {
       width: double.infinity,
       color: Colors.blueGrey,
       alignment: Alignment.centerRight,
-      child: Text(result ?? '0', style: TextStyle(fontSize: 24),),
+      child: Text(result.toString(), style: const TextStyle(fontSize: 24),),
     );
   }
 }
