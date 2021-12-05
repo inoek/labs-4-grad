@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:lab1/input_form.dart';
-import 'package:lab1/input_form_vm.dart';
-import 'package:lab1/storage_view.dart';
+import 'package:lab1/domain/input_form_vm.dart';
+import 'package:lab1/ui/input_form.dart';
+import 'package:lab1/ui/storage_view.dart';
 import 'package:provider/provider.dart';
+
+import 'domain/models.dart';
 
 void main() {
   runApp(MyApp());
@@ -31,6 +33,12 @@ class _RootScreen extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(
           create: (_) => InputFormVM(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => Student(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => Teacher(),
         ),
       ],
       child: Consumer<InputFormVM>(

@@ -1,14 +1,5 @@
 import 'package:flutter/cupertino.dart';
-
-abstract class Person {
-  const Person({
-    this.firstName,
-    this.secondName,
-  });
-
-  final String? firstName;
-  final String? secondName;
-}
+import 'package:lab1/data/person.dart';
 
 class Student extends Person with ChangeNotifier {
   Student({

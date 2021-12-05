@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lab1/input_form_vm.dart';
+import 'package:lab1/domain/input_form_vm.dart';
 import 'package:lab1/models.dart';
 import 'package:provider/provider.dart';
 
