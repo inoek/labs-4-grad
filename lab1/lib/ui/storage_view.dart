@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lab1/domain/models.dart';
 import 'package:lab1/ui/student_card.dart';
+import 'package:lab1/ui/teacher_card.dart';
 import 'package:provider/provider.dart';
 
 class StorageView extends StatelessWidget {
@@ -13,7 +14,11 @@ class StorageView extends StatelessWidget {
         title: Text('Storage View'),
       ),
       body: ListView(
-        children: [StudentCard(context.read<Student>().students)],
+        children: [
+          ...context.read<Student>().students.map((e) => StudentCard(e)),
+          const SizedBox(height: 30),
+          ...context.read<Teacher>().teachers.map((e) => TeacherCard(e)),
+        ],
       ),
     );
   }

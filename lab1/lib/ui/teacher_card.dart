@@ -2,28 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:lab1/domain/models.dart';
 import 'package:lab1/ui/app_card.dart';
 
-class StudentCard extends AppCard {
-  const StudentCard(this.student, {Key? key}) : super(key: key);
-  final Student student;
+class TeacherCard extends AppCard {
+  TeacherCard(this.teacher, {Key? key}) : super(key: key);
+
+  final Teacher teacher;
 
   @override
-  String get cardTitle => 'Student';
+  String get cardTitle => 'Teacher';
 
   @override
   Widget get card => Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            student.firstName ?? '',
+            teacher.firstName ?? '',
           ),
           Text(
-            student.secondName ?? '',
+            teacher.secondName ?? '',
           ),
           Text(
-            student.direction ?? '',
+            teacher.subject ?? '',
           ),
           Text(
-            student.year ?? '',
+            teacher.age ?? '',
           ),
         ],
       );

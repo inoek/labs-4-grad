@@ -5,7 +5,7 @@ abstract class AppCard<T> extends StatelessWidget {
 
   String get cardTitle;
 
-  List<Widget> get children;
+  Widget get card;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ abstract class AppCard<T> extends StatelessWidget {
               cardTitle,
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            ...children,
+            card,
           ],
         ),
       ),

@@ -64,15 +64,19 @@ class InputForm extends StatelessWidget {
           const SizedBox(height: 10),
           TextFormField(
             decoration: InputDecoration(label: Text('first name')),
+            onSaved: (value) => context.read<Teacher>().inputFirstName = value,
           ),
           TextFormField(
             decoration: InputDecoration(label: Text('second name')),
+            onSaved: (value) => context.read<Teacher>().inputSecondName = value,
           ),
           TextFormField(
             decoration: InputDecoration(label: Text('subject')),
+            onSaved: (value) => context.read<Teacher>().inputSubject = value,
           ),
           TextFormField(
             decoration: InputDecoration(label: Text('age')),
+            onSaved: (value) => context.read<Teacher>().inputAge = value,
           ),
         ],
       ),
