@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lab2_3/result.dart';
 
+enum CurrentSign { div, mult, minus, plus }
+
 class RootScreen extends StatefulWidget {
   const RootScreen({Key? key}) : super(key: key);
 
@@ -11,6 +13,7 @@ class RootScreen extends StatefulWidget {
 class _RootScreenState extends State<RootScreen> {
   num _result = 0;
   String? _currentValue;
+  CurrentSign? currentSign;
 
   @override
   Widget build(BuildContext context) {
@@ -173,5 +176,22 @@ class _RootScreenState extends State<RootScreen> {
       _result = int.parse(_currentValue!);
     }
     setState(() {});
+  }
+
+  void _signAction(CurrentSign? sign) {
+    switch (sign) {
+      case CurrentSign.div:
+        currentSign = CurrentSign.div;
+        _currentValue = 'Enter second value';
+        break;
+      case CurrentSign.mult:
+        break;
+      case CurrentSign.minus:
+        break;
+      case CurrentSign.plus:
+        break;
+      case null:
+        break;
+    }
   }
 }
