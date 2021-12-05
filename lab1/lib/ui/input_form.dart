@@ -29,50 +29,53 @@ class InputForm extends StatelessWidget {
   }
 
   Widget _buildForm(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          'Student',
-          style: TextStyle(fontWeight: FontWeight.bold),
-        ),
-        const SizedBox(height: 10),
-        TextFormField(
-          decoration: InputDecoration(label: Text('first name')),
-          onSaved: (value) => context.read<Student>().inputFirstName = value,
-        ),
-        TextFormField(
-          decoration: InputDecoration(label: Text('second name')),
-          onSaved: (value) => context.read<Student>().inputSecondName = value,
-        ),
-        TextFormField(
-          decoration: InputDecoration(label: Text('direction')),
-          onSaved: (value) => context.read<Student>().inputDirection = value,
-        ),
-        TextFormField(
-          decoration: InputDecoration(label: Text('year')),
-          keyboardType: TextInputType.number,
-          onSaved: (value) => context.read<Student>().inputYear = value,
-        ),
-        const SizedBox(height: 20),
-        Text(
-          'Teacher',
-          style: TextStyle(fontWeight: FontWeight.bold),
-        ),
-        const SizedBox(height: 10),
-        TextFormField(
-          decoration: InputDecoration(label: Text('first name')),
-        ),
-        TextFormField(
-          decoration: InputDecoration(label: Text('second name')),
-        ),
-        TextFormField(
-          decoration: InputDecoration(label: Text('subject')),
-        ),
-        TextFormField(
-          decoration: InputDecoration(label: Text('age')),
-        ),
-      ],
+    return Form(
+      key: _formKey,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Student',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(height: 10),
+          TextFormField(
+            decoration: InputDecoration(label: Text('first name')),
+            onSaved: (value) => context.read<Student>().inputFirstName = value,
+          ),
+          TextFormField(
+            decoration: InputDecoration(label: Text('second name')),
+            onSaved: (value) => context.read<Student>().inputSecondName = value,
+          ),
+          TextFormField(
+            decoration: InputDecoration(label: Text('direction')),
+            onSaved: (value) => context.read<Student>().inputDirection = value,
+          ),
+          TextFormField(
+            decoration: InputDecoration(label: Text('year')),
+            keyboardType: TextInputType.number,
+            onSaved: (value) => context.read<Student>().inputYear = value,
+          ),
+          const SizedBox(height: 20),
+          Text(
+            'Teacher',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(height: 10),
+          TextFormField(
+            decoration: InputDecoration(label: Text('first name')),
+          ),
+          TextFormField(
+            decoration: InputDecoration(label: Text('second name')),
+          ),
+          TextFormField(
+            decoration: InputDecoration(label: Text('subject')),
+          ),
+          TextFormField(
+            decoration: InputDecoration(label: Text('age')),
+          ),
+        ],
+      ),
     );
   }
 

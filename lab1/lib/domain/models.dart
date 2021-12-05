@@ -63,6 +63,7 @@ class Student extends Person with ChangeNotifier {
 
   void addStudent(Student student) {
     students.add(student);
+    notifyListeners();
   }
 }
 
