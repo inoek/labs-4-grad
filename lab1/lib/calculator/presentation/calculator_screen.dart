@@ -83,7 +83,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Codeplayon Calculator')),
+      appBar: AppBar(title: Text('Just calculator')),
       body: Column(
         children: <Widget>[
           Container(
