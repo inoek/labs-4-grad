@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lab1/calculator/presentation/calculator_root_screen.dart';
+import 'package:lab1/calculator/presentation/calculator_screen.dart';
 import 'package:lab1/card_book/ui/card_book_root_screen.dart';
 import 'package:lab1/dynamic_interface/dynamic_interface_root_screen.dart';
 import 'package:lab1/map/map_root_screen.dart';
@@ -58,7 +58,7 @@ class AppRouter {
             index: value,
             children: [
               _buildStackItem(context, 0, const CardBookRootScreen()),
-              _buildStackItem(context, 1, const CalculatorRootScreen()),
+              _buildStackItem(context, 1, const CalculatorScreen()),
               //Rec
               _buildStackItem(context, 2, const DynamicInterfaceRootScreen()),
               //Profile
