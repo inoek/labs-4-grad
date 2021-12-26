@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lab1/domain/models.dart';
-import 'package:lab1/ui/student_card.dart';
-import 'package:lab1/ui/teacher_card.dart';
+import 'package:lab1/card_book/domain/models.dart';
+import 'package:lab1/card_book/ui/student_card.dart';
+import 'package:lab1/card_book/ui/teacher_card.dart';
 import 'package:provider/provider.dart';
 
 class StorageView extends StatelessWidget {

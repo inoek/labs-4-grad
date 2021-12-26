@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lab1/domain/input_form_vm.dart';
-import 'package:lab1/domain/models.dart';
+import 'package:lab1/card_book/domain/input_form_vm.dart';
+import 'package:lab1/card_book/domain/models.dart';
 import 'package:provider/provider.dart';
 
 class InputForm extends StatelessWidget {

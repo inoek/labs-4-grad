@@ -1,5 +1,10 @@
 import 'package:flutter/cupertino.dart';
-import 'package:lab1/data/person.dart';
+
+abstract class Person {
+  String? get firstName;
+
+  String? get secondName;
+}
 
 class Student extends Person with ChangeNotifier {
   Student({

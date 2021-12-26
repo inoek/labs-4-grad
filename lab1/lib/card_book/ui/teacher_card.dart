@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lab1/domain/models.dart';
-import 'package:lab1/ui/app_card.dart';
+import 'package:lab1/card_book/domain/models.dart';
+
+import 'app_card.dart';
 
 class TeacherCard extends AppCard {
   TeacherCard(this.teacher, {Key? key}) : super(key: key);
