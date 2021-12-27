@@ -30,10 +30,18 @@ dependencies:
   cupertino_icons: ^1.0.2
   provider: ^6.0.1
   math_expressions: ^2.3.0
+  shared_preferences: ^2.0.11
+  freezed: ^1.1.0
+  get_it: ^7.2.0
+  injectable: any
+  flutter_gen: any
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  build_runner: any
+  flutter_gen_runner: any
+  injectable_generator: any
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
