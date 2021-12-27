@@ -13,6 +13,12 @@ class InputForm extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Input your data'),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.save),
+            onPressed: () {},
+          )
+        ],
       ),
       body: ListView(
         padding: const EdgeInsets.all(24),
