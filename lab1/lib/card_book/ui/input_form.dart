@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:lab1/card_book/domain/input_form_vm.dart';
 import 'package:lab1/card_book/domain/models.dart';
+import 'package:lab1/card_book/domain/person_bundle.dart';
+import 'package:lab1/card_book/domain/storage_bundle_cubit.dart';
+import 'package:lab1/local_storage.dart';
+import 'package:lab1/service_locator.dart';
 import 'package:provider/provider.dart';
 
 class InputForm extends StatelessWidget {
@@ -105,6 +109,9 @@ class InputForm extends StatelessWidget {
       firstName: teacherVM.inputFirstName,
       secondName: teacherVM.inputSecondName,
     );
+    locator
+        .get<LocalStorage>()
+        .write(StorageBundleCubit.bundleKey, PersonBundle());
     studentVM.addStudent(student);
     teacherVM.addTeacher(teacher);
     context.read<InputFormVM>().isEmpty = false;

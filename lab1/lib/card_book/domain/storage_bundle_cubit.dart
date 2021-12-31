@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:injectable/injectable.dart';
 import 'package:lab1/card_book/domain/person_bundle.dart';
 import 'package:lab1/card_book/domain/storage_bundle_state.dart';
 import 'package:lab1/local_storage.dart';
 import 'package:lab1/service_locator.dart';
 
+@Injectable()
 class StorageBundleCubit extends Cubit<StorageBundleState> {
   static const bundleKey = 'key';
 

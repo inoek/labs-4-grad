@@ -49,19 +49,13 @@ const $PersonBundle = _$PersonBundleTearOff();
 /// @nodoc
 mixin _$PersonBundle {
   String? get firstName => throw _privateConstructorUsedError;
-
   String? get lastName => throw _privateConstructorUsedError;
-
   String? get direction => throw _privateConstructorUsedError;
-
   String? get year => throw _privateConstructorUsedError;
-
   String? get subject => throw _privateConstructorUsedError;
-
   String? get age => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
   @JsonKey(ignore: true)
   $PersonBundleCopyWith<PersonBundle> get copyWith =>
       throw _privateConstructorUsedError;
@@ -72,7 +66,6 @@ abstract class $PersonBundleCopyWith<$Res> {
   factory $PersonBundleCopyWith(
           PersonBundle value, $Res Function(PersonBundle) then) =
       _$PersonBundleCopyWithImpl<$Res>;
-
   $Res call(
       {String? firstName,
       String? lastName,
@@ -87,7 +80,6 @@ class _$PersonBundleCopyWithImpl<$Res> implements $PersonBundleCopyWith<$Res> {
   _$PersonBundleCopyWithImpl(this._value, this._then);
 
   final PersonBundle _value;
-
   // ignore: unused_field
   final $Res Function(PersonBundle) _then;
 
@@ -135,7 +127,6 @@ abstract class _$PersonBundleCopyWith<$Res>
   factory _$PersonBundleCopyWith(
           _PersonBundle value, $Res Function(_PersonBundle) then) =
       __$PersonBundleCopyWithImpl<$Res>;
-
   @override
   $Res call(
       {String? firstName,
@@ -274,22 +265,16 @@ abstract class _PersonBundle implements PersonBundle {
 
   @override
   String? get firstName;
-
   @override
   String? get lastName;
-
   @override
   String? get direction;
-
   @override
   String? get year;
-
   @override
   String? get subject;
-
   @override
   String? get age;
-
   @override
   @JsonKey(ignore: true)
   _$PersonBundleCopyWith<_PersonBundle> get copyWith =>
