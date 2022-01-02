@@ -12,6 +12,10 @@
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>lab1</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+  	<string>Доступ необходим для автоматического определения адреса ближайшего магазина.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Доступ необходим для автоматического определения адреса ближайшего магазина.</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
