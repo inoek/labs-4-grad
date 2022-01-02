@@ -30,20 +30,20 @@ class AppRouter {
                   label: 'Lab 1, 5',
                 ),
                 BottomNavigationBarItem(
-                  activeIcon: Icon(Icons.account_box_outlined),
-                  icon: Icon(Icons.account_box_outlined),
+                  activeIcon: Icon(Icons.calculate),
+                  icon: Icon(Icons.calculate),
                   label: 'Lab 2, 3',
                 ),
                 //Rec
                 BottomNavigationBarItem(
-                  activeIcon: Icon(Icons.account_box_outlined),
-                  icon: Icon(Icons.account_box_outlined),
+                  activeIcon: Icon(Icons.assessment_rounded),
+                  icon: Icon(Icons.assessment_rounded),
                   label: 'Lab 4',
                 ),
                 //Profile
                 BottomNavigationBarItem(
-                  activeIcon: Icon(Icons.account_box_outlined),
-                  icon: Icon(Icons.account_box_outlined),
+                  activeIcon: Icon(Icons.map_outlined),
+                  icon: Icon(Icons.map_outlined),
                   label: 'Lab 6',
                 ),
               ]);
