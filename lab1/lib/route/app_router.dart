@@ -59,9 +59,7 @@ class AppRouter {
             children: [
               _buildStackItem(context, 0, const CardBookRootScreen()),
               _buildStackItem(context, 1, const CalculatorScreen()),
-              //Rec
               _buildStackItem(context, 2, const DynamicInterfaceRootScreen()),
-              //Profile
               _buildStackItem(context, 3, const MapRootScreen())
             ],
           );
